@@ -7,7 +7,6 @@
    Kevacoin is hugely influenced by Namecoin, with the key-value part of the code modified from Namecoin's name registration code.
 
 
-
 2. [What is it different from Namecoin?](https://kevacoin.org/faq#)
 
    Even though Kevacoin is hugely influenced by Namecoin, it serves very different purpose than Namecoin:
@@ -33,7 +32,11 @@
    The Kevacoin core developers sometimes give away KVA to for the community to try the Kevacoin data store, check [https://kevacoin.org/trial](https://kevacoin.org/trial). Please note that we do not pre-mine any coins. Since we get the coins through mining too, the give-away depends on how many coins we have.
 
 3. [What is the maximal supply of Kevacoin?](https://kevacoin.org/faq#)
+    The initial block reward is 1000 KVA. The reward is halved about every year (every 1050000 blocks, about 2 minutes for each block). The havling schedule is the same as Bitcoin and Litecoin. The maximal supply of Kevacoin is 2,100,000,000 KVA.
 
+4. [Did you pre-mine the coins?](https://kevacoin.org/faq#)
+
+    No. Not only that, the reward of the genesis block is 0.00001 KVA (normal block reward is 500 KVA).
 
 6. [How long does it take to confirm a key-value update?](https://kevacoin.org/faq#)
 
@@ -50,20 +53,44 @@
 
 10. [What is the maximal key and value size?](https://kevacoin.org/faq#)
 
-    The maximal key size is 255 bytes, and the maximal value size is 3072 bytes. It is hard to balance of
+    The maximal key size is 255 bytes, and the maximal value size is 3072 bytes. The maximal value size is determined by <code>MAX_SCRIPT_ELEMENT_SIZE</code>. It is 520 in Bitcoin and we increase it to 3072. There is no particular reason to choose this size. 520 bytes seems to be too small and too limited. But it cannot be too big either, because we want to avoid potential DoS attacks.
 
 11. [Why Cryptonight v8 is chosen as the Proof-of-Work algorithm?](https://kevacoin.org/faq#)
 
+    Kevacoin uses Proof-of-Work as its consensus method. The hashing algorithmn is Crytonight V8 (variant 2). Some reasons for this choice:
 
-11. [What is the block time adjustment algorithm?](https://kevacoin.org/faq#)
+    * It seems to generate less heat on GPUs than other alogorihms.
+    * It is CPU and GPU friendly. CPUs with AES NI instruction can get a better hashrate.
+    * It may be more ASIC-resistant, so is more fair to individual miners.
+
+    Cryptonight based cryptocurrencies (e.g. monero, bytecoin) have different header structure than Bitcoin/Litecoin. Therefore the existing Cryptonight miners (e.g. XMRig) are incompatible with Kevacoin. We provide reference implementation for AMD and Nvidia GPU based on [ccminer](https://github.com/tpruvot/ccminer). The miner for AMD GPU can be found [here](https://github.com/kevacoin-project/ccminer-amd), and miner for Nvidia GPU [here](https://github.com/kevacoin-project/ccminer-nvidia).
+
+11. [What is the difficulty adjustment algorithm?](https://kevacoin.org/faq#)
+
+    Kevacoin uses DigiShield difficulty adjustment algorithm, same as the one used by DogeCoin. The block target time is adjusted every block. DigiShield prevents the negative effect of pool jumpers. For example, if large amount of hashrate joins Kevacoin mining, the difficulty target will quickly increase to prevent easy rewards. Similarly, the difficulty target will decrease when large amount of hashrate leaves, so that blocks will still be generated in about 2 minutes even with less hashing power.
 
 11. [What are the threats posed by 51% attack?](https://kevacoin.org/faq#)
 
+    The greatest risk of 51% attack is double-spending. This is a well known risk for the Proof-of-Work based cryptocurrencies. However, an attacker cannot arbitrarily changes the key-value pairs that he/she does not own. The worst an attacker can do is block or reverse the key-value transactions. Key-value pairs tampered by non-owners will not be accepted by the network, as they are cryptographically secured. The blocked or reversed transactions will stay in mempool and will be eventually added to the blockchain when the attack stops.
 
 12. [Is my data visible to the public?](https://kevacoin.org/faq#)
 
+    All the key-value transactions are visible to the public, as this is the nature of bitcoin style blockchain. One can encrypt the values, or only store the hashes of the values, to protect the  confidentiality of the values.
 
 13. [Do you accept contributions to the development of Kevacoin?](https://kevacoin.org/faq#)
+
+    Absolutely. You can help us in different ways:
+
+    * Download the client software, run and test it.
+    * Run a public full node.
+    * Be a miner or start a mining pool.
+    * Review or write documentation, including this FAQ.
+    * Write unit tests, end-to-end tests and regression tests.
+    * Report bugs. To report non-security bugs, use the Github issue tracker. For security-related bugs, please see the [Responsible Discloure](https://kevacoin.org/responsible_disclosure) page.
+    * Develop application using the Kevacoin de-centralized data store.
+    * Promote the project.
+    * Contribute source code to the Kevacoin project. Pull requests are welcomed!
+    * Donate to the project.
 
 
 
