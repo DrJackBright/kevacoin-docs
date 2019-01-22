@@ -25,7 +25,7 @@
 
    The easiest way to get Kevacoin is through mining. We provide mining software on Linux and Windows, and support both Nvidia and AMD GPUs, as well as CPUs. Check [https://kevacoin.org/mining](https://kevacoin.org/mining) for more information.
 
-   The Kevacoin core developers sometimes give away KVA to the community to try the Kevacoin data store, check [https://kevacoin.org/trial](https://kevacoin.org/trial). Please note that we do not pre-mine any coins. Since we get the coins through mining too, the give-away depends on how many coins we have.
+   The Kevacoin core developers sometimes give away KVA to the community to try the Kevacoin data store. Please note that we do not pre-mine any coins. Since we get the coins through mining too, the give-away depends on how many coins we have.
 
 3. **What is the maximum supply of Kevacoin?**
 
@@ -71,7 +71,7 @@
     * It is CPU and GPU friendly. CPUs with AES NI instruction can get a better hashrate.
     * It may be more ASIC-resistant, so is more fair to individual miners.
 
-    Cryptonight based cryptocurrencies (e.g. monero, bytecoin) have different header structure than Bitcoin/Litecoin. Therefore, the existing Cryptonight miners (e.g. XMRig) are incompatible with Kevacoin. We provide reference implementations for CPU, AMD and Nvidia GPU based on ccminer. The miner for CPU can be found [here](https://github.com/kevacoin-project/ccminer-cpu). AMD GPU can be found [here](https://github.com/kevacoin-project/ccminer-amd), and miner for Nvidia GPU [here](https://github.com/kevacoin-project/ccminer-nvidia).
+    Cryptonight based cryptocurrencies (e.g. monero, bytecoin) have different header structure than Bitcoin/Litecoin. Therefore, the existing Cryptonight miners (e.g. XMRig) are incompatible with Kevacoin. We provide reference implementations for CPU, AMD and Nvidia GPU based on ccminer. The mining software can be found [here](https://kevacoin.org/mining.html).
 
 11. **What is the difficulty adjustment algorithm?**
 
