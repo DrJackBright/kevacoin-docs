@@ -94,7 +94,7 @@
     * Be a miner or start a mining pool.
     * Review or write documentation, including this FAQ.
     * Write unit tests, end-to-end tests and regression tests.
-    * Report bugs. To report non-security bugs, use the Github issue tracker. For security-related bugs, please see the [Responsible Discloure](https://kevacoin.org/responsible_disclosure) page.
+    * Report bugs. To report non-security bugs, use the Github issue tracker. To report security-related bugs, please send emails to security@kevacoin.org.
     * Develop application using the Kevacoin de-centralized data store.
     * Promote the project.
     * Contribute source code to the Kevacoin project. Pull requests are welcomed!
