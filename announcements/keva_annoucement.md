@@ -37,5 +37,5 @@ We developed Kevacoin as an open source project. It is not funded by any compani
 - Mastondon: [https://mastodon.cryptodont.io/@keva](https://mastodon.cryptodont.io/@keva)
 - Twitter [https://twitter.com/kevacoin](https://twitter.com/kevacoin)
 
-If you would like to make some changes to this annoucement, please submit a pull request at: [https://github.com/kevacoin-project/kevacoin-docs/announcements/keva_annoucement.md](https://github.com/kevacoin-project/kevacoin-docs/announcements/keva_annoucement.md).
+If you would like to make some changes to this annoucement, please submit a pull request at: [https://github.com/kevacoin-project/kevacoin-docs/blob/master/announcements/keva_annoucement.md](https://github.com/kevacoin-project/kevacoin-docs/blob/master/announcements/keva_annoucement.md).
 
