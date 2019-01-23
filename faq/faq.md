@@ -85,16 +85,16 @@
 
     All the key-value transactions are visible to the public, as this is the nature of bitcoin style blockchain. One can encrypt the values, or only store the hashes of the values, to protect the  confidentiality of the values.
 
-13. **Do you accept contributions to the development of Kevacoin?**
+13. <a name="contribute"></a>**Do you accept contributions to the development of Kevacoin?**
 
-    Absolutely. Kevacoin is a community project and participation from the community is vital for its long term success. You can help us in different ways:
+    Kevacoin is a community project and participation from the community is vital for its long term success. You can help us in different ways:
 
     * Download the client software, run and test it.
     * Run a public full node.
     * Be a miner or start a mining pool.
-    * Review or write documentation, including this FAQ.
+    * Review or write documentation, including this FAQ. You can submit pull requests to [https://github.com/kevacoin-project/kevacoin-docs](https://github.com/kevacoin-project/kevacoin-docs).
     * Write unit tests, end-to-end tests and regression tests.
-    * Report bugs. To report non-security bugs, use the Github issue tracker. To report security-related bugs, please send emails to security@kevacoin.org.
+    * Report bugs. To report non-security bugs, use the Github issue tracker. To report security-related bugs, please send emails to [security@kevacoin.org](mailto:security@kevacoin.org).
     * Develop application using the Kevacoin de-centralized data store.
     * Promote the project.
     * Contribute source code to the Kevacoin project. Pull requests are welcomed!
