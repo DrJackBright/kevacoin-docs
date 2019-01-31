@@ -85,9 +85,9 @@
 
     All the key-value transactions are visible to the public, as this is the nature of bitcoin style blockchain. One can encrypt the values, or only store the hashes of the values, to protect the  confidentiality of the values.
 
-13. <a name="contribute"></a>**Do you accept contributions to the development of Kevacoin?**
+13. <a name="contribute"></a>**How can I contribute to the development of Kevacoin?**
 
-    Kevacoin is a community project and participation from the community is vital for its long term success. You can help us in different ways:
+    Thanks for asking! Kevacoin is a community project and participation from the community is vital for its long term success. You can help us in different ways:
 
     * Download the client software, run and test it.
     * Run a public full node.
